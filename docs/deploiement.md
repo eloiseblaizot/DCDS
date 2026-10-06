@@ -20,7 +20,7 @@ Supabase fournit la base de données, la connexion des joueurs (invités et Disc
      - `http://localhost:3000/auth/callback` (pour tester en local)
 5. Récupère ces trois valeurs. Le bouton **Connect** en haut de la page du projet affiche l'URL et la clé publique ; sinon, va dans **Project Settings > Data API** (URL) et **Project Settings > API Keys** (clés).
    - **Project URL** (`https://<identifiant>.supabase.co`, l'identifiant est aussi dans l'adresse du tableau de bord) → `NEXT_PUBLIC_SUPABASE_URL`
-   - clé **anon** / **publishable** → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - clé **publishable** / **anon** → `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (l'ancien nom `NEXT_PUBLIC_SUPABASE_ANON_KEY` marche aussi)
    - clé **service_role** / **secret** → `SUPABASE_SERVICE_ROLE_KEY` ⚠️ Cette clé donne tous les droits : elle ne doit jamais être publiée, ni préfixée `NEXT_PUBLIC_`.
 
    Si l'onglet API Keys propose à la fois des clés *publishable* / *secret* et des clés *legacy* `anon` / `service_role`, les deux paires fonctionnent : prends simplement les deux clés dans la même paire.
@@ -55,7 +55,7 @@ LiveKit transporte les webcams et les micros. Sans lui, le jeu fonctionne avec l
    | Nom | Valeur |
    | --- | --- |
    | `NEXT_PUBLIC_SUPABASE_URL` | Project URL Supabase |
-   | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | clé anon / publishable |
+   | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | clé publishable / anon |
    | `SUPABASE_SERVICE_ROLE_KEY` | clé service_role / secret |
    | `LIVEKIT_URL` | `wss://…livekit.cloud` |
    | `LIVEKIT_API_KEY` | API key LiveKit |
