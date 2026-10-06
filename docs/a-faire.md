@@ -18,22 +18,22 @@ Coche au fur et à mesure. Les étapes détaillées sont dans [deploiement.md](d
 
 ## 2. Juridique (obligatoire avant d'ouvrir au public)
 
-- [ ] Compléter `src/app/mentions-legales/page.tsx` : identité de l'éditeur (nom ou raison sociale, adresse) et adresse de contact. En France, c'est une obligation légale (LCEN) ; les emplacements sont marqués `[à compléter]`.
-- [ ] Vérifier le titre exact de l'émission dans `src/lib/legal.ts`. Ton message disait tantôt « Conteneurs », tantôt « Containers » ; j'ai mis « Des Conteneurs et Des Surprises ».
+- [x] Compléter les mentions légales : éditrice, adresse et contact (`dcds@blzt.fr`) sont dans `src/lib/legal.ts`.
+- [x] Titre de l'émission : « Des Containers et Des Surprises » (`src/lib/legal.ts`).
 - [ ] Vérifier les noms des créateurs (j'ai écrit « Hauchard », le vrai nom de Squeezie) et l'ayant droit `UNFOLD PRODUCTION`.
 - [ ] Recommandé : demander l'accord d'UNFOLD PRODUCTION. La mention de crédit ne vaut pas autorisation d'exploiter le concept et la DA en public.
 
-## 3. Décisions de jeu à valider
+## 3. Décisions de jeu (validées)
 
-J'ai tranché ces points pour avancer. Chacun se change facilement : voir [personnalisation.md](personnalisation.md).
+Chacune se change facilement si besoin : voir [personnalisation.md](personnalisation.md).
 
-- [ ] **Chat « participants »** = chat secret entre participants, **invisible pour le décideur** de la manche. Le **chat global** inclut tout le monde, spectateurs compris.
-- [ ] **Gagnant** : chaque lot a une valeur fictive en €. Le classement final se fait sur le butin cumulé de toutes les manches.
-- [ ] **Temps écoulé** : les conteneurs pas encore choisis sont attribués au hasard, puis on passe directement au reveal.
-- [ ] **Vol de conteneur** : termine la manche immédiatement : pas de séquence de réaction du joueur volé, on passe directement au reveal.
-- [ ] **Minimum pour lancer** : 3 joueurs (le maximum réglable par l'host reste 4 à 12).
-- [ ] **Reveal** : le décideur (ou l'host) ouvre les conteneurs un par un, participants d'abord, conteneur abandonné (urgence) ensuite, décideur en dernier.
-- [ ] **Arrivée en cours de partie** : on rejoint en spectateur. Un joueur de la partie qui recharge la page retrouve sa place.
+- [x] **Chat « participants »** = chat secret entre participants, **invisible pour le décideur** de la manche. Le **chat global** inclut tout le monde, spectateurs compris.
+- [x] **Gagnant** : chaque lot a une valeur fictive en €. Le classement final se fait sur le butin cumulé de toutes les manches.
+- [x] **Temps écoulé** : les conteneurs pas encore choisis sont attribués au hasard, puis on passe directement au reveal.
+- [x] **Vol de conteneur** : termine la manche immédiatement : pas de séquence de réaction du joueur volé, on passe directement au reveal.
+- [x] **Minimum pour lancer** : 3 joueurs (le maximum réglable par l'host reste 4 à 12).
+- [x] **Reveal** : le décideur (ou l'host) ouvre les conteneurs un par un, participants d'abord, conteneur abandonné (urgence) ensuite, décideur en dernier.
+- [x] **Arrivée en cours de partie** : on rejoint en spectateur. Un joueur de la partie qui recharge la page retrouve sa place.
 
 ## 4. Premier test en conditions réelles
 

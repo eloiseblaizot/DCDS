@@ -21,7 +21,8 @@ Astuce : `grep -rn "DCDS" src` liste toutes les occurrences.
 ## Textes légaux
 
 - `src/lib/legal.ts` : titre de l'émission, créateurs, ayant droit. La mention du pied de page est construite à partir de ces trois constantes.
-- `src/app/mentions-legales/page.tsx` : éditeur, hébergeur, données personnelles. Les champs `[à compléter]` sont **à remplir avant l'ouverture au public**.
+- `src/lib/legal.ts` (`PUBLISHER`) : éditrice, adresse et e-mail de contact, affichés sur la page mentions légales.
+- `src/app/mentions-legales/page.tsx` : le reste de la page (hébergeur, données personnelles, lots).
 
 ## Les lots
 

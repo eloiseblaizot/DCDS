@@ -1,6 +1,6 @@
 # DCDS — le jeu des conteneurs
 
-Jeu web multijoueur (PC et mobile) inspiré du concept de l'émission « Des Conteneurs et Des Surprises » de Lucas « Squeezie » Hauchard et Théodore Bonnet. Tous les droits sur l'émission sont réservés à UNFOLD PRODUCTION. Ce projet n'est ni affilié ni approuvé par ses ayants droit.
+Jeu web multijoueur (PC et mobile) inspiré du concept de l'émission « Des Containers et Des Surprises » de Lucas « Squeezie » Hauchard et Théodore Bonnet. Tous les droits sur l'émission sont réservés à UNFOLD PRODUCTION. Ce projet n'est ni affilié ni approuvé par ses ayants droit.
 
 > Choisis ton conteneur. Bluffe. Échange. Repars avec le meilleur lot… ou avec un cafard dans un bocal.
 

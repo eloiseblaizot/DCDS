@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/art/Logo";
 import { Footer } from "@/components/Footer";
-import { RIGHTS_HOLDER, SHOW_CREATORS, SHOW_TITLE } from "@/lib/legal";
+import { PUBLISHER, RIGHTS_HOLDER, SHOW_CREATORS, SHOW_TITLE } from "@/lib/legal";
 
 export const metadata: Metadata = { title: "DCDS · mentions légales" };
 
@@ -31,7 +31,12 @@ export default function LegalPage() {
         <section className="clay clay-grain p-6">
           <h2 className="text-xl font-bold">Éditeur et hébergement</h2>
           <p className="mt-2 text-ink-soft">
-            Éditeur du site : <em>[nom / raison sociale, adresse et contact de l&apos;éditeur à compléter]</em>.
+            Éditrice du site et directrice de la publication : <strong>{PUBLISHER.name}</strong>, {PUBLISHER.address}.
+            <br />
+            Contact :{" "}
+            <a href={`mailto:${PUBLISHER.email}`} className="font-semibold text-clay-blue underline-offset-2 hover:underline">
+              {PUBLISHER.email}
+            </a>
           </p>
           <p className="mt-2 text-ink-soft">
             Hébergement : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. Base de données et
@@ -56,7 +61,11 @@ export default function LegalPage() {
             <li>Messages de chat et parties : conservés le temps de la partie, puis supprimés lors du nettoyage des salons.</li>
           </ul>
           <p className="mt-2 text-ink-soft">
-            Pour toute demande (accès, suppression) : <em>[adresse de contact à compléter]</em>.
+            Pour toute demande (accès, rectification, suppression de tes données) :{" "}
+            <a href={`mailto:${PUBLISHER.email}`} className="font-semibold text-clay-blue underline-offset-2 hover:underline">
+              {PUBLISHER.email}
+            </a>
+            .
           </p>
         </section>
 
